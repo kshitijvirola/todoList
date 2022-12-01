@@ -45,23 +45,26 @@ export const Form = ({editFormVisibility, editTodo, cancelUpdate}) => {
     <>
       {editFormVisibility===false?(
         <form className='form-group custom-form' onSubmit={handleSubmit}>
-          <label>Add your todo-items</label>
+          <label>Enter list-items</label>
+          
           <div className='input-and-btn'>
               <input type="text" className='form-control' required
               value={todoValue} onChange={(e)=>setTodoValue(e.target.value)}/>
+              <br></br>
+              <button type='reset' >RESET</button>
               <button type="submit" className='btn btn-secondary btn-md'>ADD</button>
           </div>
         </form>
       ):(
         <form className='form-group custom-form' onSubmit={editSubmit}>
-          <label>Update your todo-items</label>
+          <label>Edit your list-items</label>
           <div className='input-and-btn'>
               <input type="text" className='form-control' required
               value={editValue||""} onChange={(e)=>setEditValue(e.target.value)}/>
               <button type="submit" className='btn btn-secondary btn-md'>UPDATE</button>
           </div>
           <button type="button" className='btn btn-primary btn-md back-btn'
-          onClick={cancelUpdate}>BACK</button>
+          onClick={cancelUpdate}>GO BACK</button>
         </form>
       )}
     </>

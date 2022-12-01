@@ -1,61 +1,70 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h3{
+    margin-top: 20px;
 
-.wrapper{
-  max-width: 1440px;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  }
+  .wrapper{
+    max-width: 1440px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-form{
 
-.custom-form{
-  width: 400px;
-  height: auto;
-  margin: 20px auto;
-}
-
-.input-and-btn{
-  display: flex;
-}
-
-.todo-box{
-  width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.todo-box .content{
-  display: flex;
-}
-
-.todo-box .content p{
-  margin-top: -6px;
-  margin-left: 6px;
-}
-
-.todo-box span{
-  margin: 0 5px;
-}
-
-.delete-all{
-  width: 400px;
-}
-
-.actions-box{
-  cursor: pointer;
-}
-
-.back-btn{
-  margin-top: 5px;
-  width: 100%;
-}
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 400px;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .input-and-btn{
+    display: flex;
+  }
+  
+  .todo-box{
+    
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .todo-box .content{
+    display: flex;
+  }
+  
+  .todo-box .content p{
+    margin-top: -6px;
+    margin-left: 6px;
+  }
+  
+  .todo-box span{
+    margin: 0 5px;
+  }
+  
+  .delete-all{
+    width: auto;
+  }
+  
+  .actions-box{
+    cursor: pointer;
+  }
+  
+  .back-btn{
+    margin-top: 5px;
+    width: 100%;
+  }
